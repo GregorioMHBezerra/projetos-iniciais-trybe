@@ -14,6 +14,4 @@ const countAnimals = (animal) => {
   return searchAnimal.residents.filter((ind) => ind.sex === animal.sex).length;
 };
 
-console.log(countAnimals({ species: 'penguins', sex: 'male' }));
-
 module.exports = countAnimals;

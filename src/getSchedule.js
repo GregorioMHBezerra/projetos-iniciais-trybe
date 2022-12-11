@@ -34,6 +34,4 @@ const getSchedule = (scheduleTarget) => {
   return allSchedule();
 };
 
-console.log(getSchedule());
-
 module.exports = getSchedule;
