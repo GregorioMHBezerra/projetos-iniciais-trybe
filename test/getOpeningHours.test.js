@@ -13,13 +13,13 @@ describe('Testes da função getOpeningHours', () => {
     });
   });
   it('Se passar `Monday` e `09:00-AM` deve retornar a string `The zoo is closed`', () => {
-    expect(getOpeningHours('Monday', '09:00-AM')).toEqual('The zoo is closed');
+    expect(getOpeningHours('Monday', '09:00-AM')).toBe('The zoo is closed');
   });
   it('Se passar `Tuesday` e `09:00-AM` deve retornar a string `The zoo is open`', () => {
-    expect(getOpeningHours('Tuesday', '09:00-AM')).toEqual('The zoo is open');
+    expect(getOpeningHours('Tuesday', '09:00-AM')).toBe('The zoo is open');
   });
   it('Se passar `Wednesday` e `09:00-PM` deve retornar a string `The zoo is closed`', () => {
-    expect(getOpeningHours('Wednesday', '09:00-PM')).toEqual('The zoo is closed');
+    expect(getOpeningHours('Wednesday', '09:00-PM')).toBe('The zoo is closed');
   });
   it('Se passar os argumentos com abreviação da hora incorreta deve lançar o erro `The abbreviation must be \'AM\' or \'PM\'`', () => {
     expect(() => {
