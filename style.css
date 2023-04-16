@@ -39,9 +39,15 @@ main {
   width: 700px;  
 }
 
+.lessons-pixels-art {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .header {
   display: flex;
-  background-color: rgb(50, 167, 145);
+  background-color: rgba(110, 19, 11, 0.649);
   justify-content: space-between;
   align-items: center;
   width: 700px;
@@ -49,6 +55,14 @@ main {
 
 .trybewarts-login {
   display: flex;
+}
+
+#article-project {
+ background-color: rgba(160, 159, 146, 0.276);
+}
+
+.todo-list {
+  background-color: rgba(0, 0, 255, 0.309);
 }
 
 #evaluation-form {
