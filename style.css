@@ -35,7 +35,8 @@ main {
 }
 
 .lessons {
-  background-color: rgba(255, 0, 0, 0.219);  
+  background-color: rgba(255, 0, 0, 0.219);
+  width: 700px;  
 }
 
 .header {
@@ -43,7 +44,7 @@ main {
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
-
+  width: 700px;
 }
 
 .trybewarts-login {
@@ -83,9 +84,12 @@ que deve aparecer apenas depois de enviar as informações */
 
 footer {
   text-align: justify;
-  position: absolute;
   width: 100%;
-  bottom: 0;
+}
+
+.section-column {
+  display: flex;
+  flex-direction: column;
 }
 
 footer p {
@@ -120,3 +124,11 @@ footer abbr {
   text-decoration: line-through solid black;
 }
 
+.main-geral {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-todo-trybewarts {
+  display: flex;
+}

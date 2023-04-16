@@ -8,204 +8,224 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-<!-- Esta section abaixo trata-se do HTML do projeto Trybewarts, que utiliza o script.js - O CSS de todos os projetos iniciais foram feitos no style.css -->
-    <section>
-      <nav>
-        <a href="https://gregoriomhbezerra.github.io/">Página inicial do portfólio</a>
-        <a href="https://www.linkedin.com/in/gregoriobezerra/" target="_blank"><abbr title="abre em nova aba">Meu Linkedin</abbr></a>
-      </nav>
-      <header class="header">
-        <!-- <img src="images/trybewarts-header-logo.svg" alt="Logo da Trybewarts" class="trybewarts-header-logo"> -->
+    <main class="main-geral">
       
-        <h1 id="trybewarts-header-title">Junção dos projetos iniciais da Trybe</h1>
-        <form action="" class="trybewarts-login" method="get">
-          <label for="email">
-            <input type="email" name="email" id="email" placeholder="Email">
-          </label>
-          <label for="senha">
-            <input id="senha" type="password" name="password" placeholder="Senha">
-          </label>
-          <button id="btnEntrar">Entrar</button>
-        </form>
+      <header>
+        <nav>
+          <a href="https://gregoriomhbezerra.github.io/">Página inicial do portfólio</a>
+          <a href="https://www.linkedin.com/in/gregoriobezerra/" target="_blank"><abbr title="abre em nova aba">Meu Linkedin</abbr></a>
+        </nav>
       </header>
-      <main>
-      
-        <form action="" id="evaluation-form">
-      
-          <h2>Formulário de Avaliação</h2>
-          <!-- Primeira Section -->
-          <fieldset id="section-one">
-            <legend>Quem é você e qual sua casa?</legend>
-            <label for="input-name">
-              <input type="text" id="input-name" placeholder="Nome">
-            </label>
-      
-            <label for="input-lastname">
-              <input type="text" id="input-lastname" placeholder="Sobrenome">
-            </label>
-      
-            <label for="input-email">
-              <input type="text" id="input-email" placeholder="Email">
-            </label>
-      
-      
-            <label id="label-casa">Casa:
-              <select name="House" id="house" title="Casa:">
-                <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-                <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-                <option value="Corvinode" id="corvinode-house">Corvinode</option>
-                <option value="Pytherina" id="pytherina-house" selected>Pytherina</option>
-              </select>
-            </label>
-      
-          </fieldset>
-      
-          <!-- Segunda section -->
-          <fieldset id="section-two">
-            <legend>Escolha apenas uma família, mas quantos conteúdos quiser</legend>
-            <label id="label-family">Qual sua família?</label>
-              <br>
-              <section id="teste">
-                <label for="frontend">
-                  <input type="radio" name="family" id="frontend" value="Frontend">Frontend
-                </label>
-                <label for="backend">
-                  <input type="radio" name="family" id="backend" value="Backend">Backend
-                </label>
-                <label for="fullstack">
-                  <input type="radio" name="family" id="fullstack" value="FullStack">FullStack
-                </label>
-              </section>
-      
-            <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-            <br>
-            <label for="hoFs">
-              <input type="checkbox" name="" value="HoFs" id="hoFs" class="subject">HoFs
-            </label>
-            <label for="jest">
-              <input type="checkbox" name="" value="Jest" id="jest" class="subject">Jest
-            </label>
-            <label for="promises">
-              <input type="checkbox" name="" value="Promises" id="promises" class="subject">Promises
-            </label>
-            <label for="react">
-              <input type="checkbox" name="" value="React" id="react" class="subject">React
-            </label>
-            <label for="sql">
-              <input type="checkbox" name="" value="SQL" id="sql" class="subject">SQL
-            </label>
-            <label for="python">
-              <input type="checkbox" name="" value="Python" id="python" class="subject">Python
-            </label>
-          </fieldset>
-      
-          <!-- Terceira section  -->
-          <fieldset>
-            <legend>Nos avalie de 1 a 10</legend>
-            <label id="label-rate">Como você avalia a Trybewarts?
-              <input type="radio" name="rate" value="1" id="">1
-              <input type="radio" name="rate" value="2" id="">2
-              <input type="radio" name="rate" value="3" id="">3
-              <input type="radio" name="rate" value="4" id="">4
-              <input type="radio" name="rate" value="5" id="">5
-              <input type="radio" name="rate" value="6" id="">6
-              <input type="radio" name="rate" value="7" id="">7
-              <input type="radio" name="rate" value="8" id="">8
-              <input type="radio" name="rate" value="9" id="">9
-              <input type="radio" name="rate" value="10" id="">10
-            </label>
-          </fieldset>
-      
-          <!-- Quarta section  -->
-          <fieldset>
-            <legend>Comente algo, marque o check e nos envie seu formulário</legend>
-            <label for="textarea" class="textarea">Deixe seu comentário:
-              <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
-            </label>
-            <label for="counter">Caracteres restantes:
-              <p id="counter">500</p>
-            </label>
-            <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?
-              <input type="checkbox" name="" id="agreement">
-            </label>
-            <button type="submit" id="submit-btn" disabled>Enviar</button>
-          </fieldset>
-        </form>
-        <section id="form-data">
-          <p id="form-data-nome">Nome: </p>
-          <p id="form-email">Email: </p>
-          <p id="form-casa">Casa: </p>
-          <p id="form-familia">Família: </p>
-          <p id="form-materias">Matérias: </p>
-          <p id="form-avaliacao">Avaliação: </p>
-          <p id="form-observacoes">Observações: </p>
-        </section>
-        <aside class="lessons">
+
+      <section class="lessons">
           <img src="https://avatars.githubusercontent.com/u/110674033?v=4" alt="Imagem com perfil esquerdo de Gregório Bezerra, que está com camisa de mangas cumpridas azul" id="minha_foto">
           <p>
             <strong>Brasileiro</strong> e morador de <strong>Recife-PE</strong>, sou arqueólogo de formação e estudante de Desenvolvimento Web.
           </p>
           <p>
-            Nesta página encontra-se um reseumo/conjunto dos primeiros projetos realizados no curso da Trybe.<strong> Hoje em dia eu mudaria muito do que fiz, mas optei por manter os códigos como registro do desenvolvimento e também para rir um pouco.</strong> 
+            Nesta página encontra-se um reseumo/conjunto dos primeiros projetos realizados no curso da Trybe.<strong> Hoje em dia eu mudaria muito do que fiz, mas optei por manter os códigos como registro do desenvolvimento e também para rir um pouco.</strong>
           </p>
-        </aside>
-    </section>
-<!-- Esta section abaixo trata-se do HTML do projeto toDoList, que utiliza o scriptTodoList.js - O CSS de todos os projetos iniciais foram feitos no style.css -->
-      <section> 
-        <header>
-          <h1>
-            Minha Lista de Tarefas
-          </h1>
-          <p id="funcionamento">
-            Clique duas vezes em um item para marcá-lo como completo
-          </p>
-        </header>
-      
-        <main id="main-todo">
-          <section>
-            <label for="texto-tarefa">
-              <button id="criar-tarefa">
-                Adicionar
-              </button>
-              <input type="text" name="itemDaLista" id="texto-tarefa" placeholder="digite a tarefa a ser inserida">
-            </label>
-            
-            <button id="salvar-tarefas">
-              Salvar tarefas
-            </button>
-            <button id="remover-finalizados">
-              Remover os <em>finalizados</em>
-            </button>
-            <button id="mover-cima">
-              &uArr;
-            </button>
-            <button id="mover-baixo">
-              &dArr;
-            </button>
-            
-            <button id="remover-selecionado">
-              Remover <em>selecionado</em>
-            </button>
-            <button id="apaga-tudo">
-              Apagar tudo
-            </button>
-          </section>
-          
-          <ol id="lista-tarefas">
-      
-          </ol>
-        </main>
-      
-        <footer>
-          <p>
-            Criado por <a href="https://www.linkedin.com/in/gregoriobezerra/" target="_blank"><abbr title="Abre o Linkedin em uma nova aba">Gregório Bezerra</abbr></a> &copy; 2022
-          </p>
-        </footer>
       </section>
 
-    </main>
+      <section class="section-todo-trybewarts">
+
+      <!-- Esta section abaixo trata-se do HTML do projeto Trybewarts, que utiliza o script.js - O CSS de todos os projetos iniciais foram feitos no style.css -->
+      <section>
+        <header class="header">
+          <!-- <img src="images/trybewarts-header-logo.svg" alt="Logo da Trybewarts" class="trybewarts-header-logo"> -->
       
+          <h1 id="trybewarts-header-title">Junção dos projetos iniciais da Trybe</h1>
+          <form action="" class="trybewarts-login" method="get">
+            <label for="email">
+              <input type="email" name="email" id="email" placeholder="Email">
+            </label>
+            <label for="senha">
+              <input id="senha" type="password" name="password" placeholder="Senha">
+            </label>
+            <button id="btnEntrar">Entrar</button>
+          </form>
+        </header>
+      
+          <form action="" id="evaluation-form">
+      
+            <h2>Formulário de Avaliação Trybewarts</h2>
+            <!-- Primeira Section -->
+            <fieldset id="section-one">
+              <legend>Quem é você e qual sua casa?</legend>
+              <label for="input-name">
+                <input type="text" id="input-name" placeholder="Nome">
+              </label>
+      
+              <label for="input-lastname">
+                <input type="text" id="input-lastname" placeholder="Sobrenome">
+              </label>
+      
+              <label for="input-email">
+                <input type="text" id="input-email" placeholder="Email">
+              </label>
+      
+      
+              <label id="label-casa">Casa:
+                <select name="House" id="house" title="Casa:">
+                  <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                  <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                  <option value="Corvinode" id="corvinode-house">Corvinode</option>
+                  <option value="Pytherina" id="pytherina-house" selected>Pytherina</option>
+                </select>
+              </label>
+      
+            </fieldset>
+      
+            <!-- Segunda section -->
+            <fieldset id="section-two">
+              <legend>Escolha apenas uma família, mas quantos conteúdos quiser</legend>
+              <label id="label-family">Qual sua família?</label>
+                <br>
+                <section id="teste">
+                  <label for="frontend">
+                    <input type="radio" name="family" id="frontend" value="Frontend">Frontend
+                  </label>
+                  <label for="backend">
+                    <input type="radio" name="family" id="backend" value="Backend">Backend
+                  </label>
+                  <label for="fullstack">
+                    <input type="radio" name="family" id="fullstack" value="FullStack">FullStack
+                  </label>
+                </section>
+      
+              <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+              <br>
+              <label for="hoFs">
+                <input type="checkbox" name="" value="HoFs" id="hoFs" class="subject">HoFs
+              </label>
+              <label for="jest">
+                <input type="checkbox" name="" value="Jest" id="jest" class="subject">Jest
+              </label>
+              <label for="promises">
+                <input type="checkbox" name="" value="Promises" id="promises" class="subject">Promises
+              </label>
+              <label for="react">
+                <input type="checkbox" name="" value="React" id="react" class="subject">React
+              </label>
+              <label for="sql">
+                <input type="checkbox" name="" value="SQL" id="sql" class="subject">SQL
+              </label>
+              <label for="python">
+                <input type="checkbox" name="" value="Python" id="python" class="subject">Python
+              </label>
+            </fieldset>
+      
+            <!-- Terceira section  -->
+            <fieldset>
+              <legend>Nos avalie de 1 a 10</legend>
+              <label id="label-rate">Como você avalia a Trybewarts?
+                <input type="radio" name="rate" value="1" id="">1
+                <input type="radio" name="rate" value="2" id="">2
+                <input type="radio" name="rate" value="3" id="">3
+                <input type="radio" name="rate" value="4" id="">4
+                <input type="radio" name="rate" value="5" id="">5
+                <input type="radio" name="rate" value="6" id="">6
+                <input type="radio" name="rate" value="7" id="">7
+                <input type="radio" name="rate" value="8" id="">8
+                <input type="radio" name="rate" value="9" id="">9
+                <input type="radio" name="rate" value="10" id="">10
+              </label>
+            </fieldset>
+      
+            <!-- Quarta section  -->
+            <fieldset>
+              <legend>Comente algo, marque o check e nos envie seu formulário</legend>
+              <label for="textarea" class="textarea">Deixe seu comentário:
+                <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+              </label>
+              <label for="counter">Caracteres restantes:
+                <p id="counter">500</p>
+              </label>
+              <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?
+                <input type="checkbox" name="" id="agreement">
+              </label>
+              <button type="submit" id="submit-btn" disabled>Enviar</button>
+            </fieldset>
+          </form>
+          <section id="form-data">
+            <p id="form-data-nome">Nome: </p>
+            <p id="form-email">Email: </p>
+            <p id="form-casa">Casa: </p>
+            <p id="form-familia">Família: </p>
+            <p id="form-materias">Matérias: </p>
+            <p id="form-avaliacao">Avaliação: </p>
+            <p id="form-observacoes">Observações: </p>
+          </section>
+      </section>
+
+      <section class="section-column">
+        <!-- Esta section abaixo trata-se do HTML do projeto toDoList, que utiliza o scriptTodoList.js - O CSS de todos os projetos iniciais foram feitos no style.css -->
+          <section>
+            <header>
+              <h1>
+                Minha Lista de Tarefas
+              </h1>
+              <p id="funcionamento">
+                Clique duas vezes em um item para marcá-lo como completo
+              </p>
+            </header>
+        
+            <main id="main-todo">
+              <section>
+                <label for="texto-tarefa">
+                  <button id="criar-tarefa">
+                    Adicionar
+                  </button>
+                  <input type="text" name="itemDaLista" id="texto-tarefa" placeholder="digite a tarefa a ser inserida">
+                </label>
+        
+                <button id="salvar-tarefas">
+                  Salvar tarefas
+                </button>
+                <button id="remover-finalizados">
+                  Remover os <em>finalizados</em>
+                </button>
+                <button id="mover-cima">
+                  &uArr;
+                </button>
+                <button id="mover-baixo">
+                  &dArr;
+                </button>
+        
+                <button id="remover-selecionado">
+                  Remover <em>selecionado</em>
+                </button>
+                <button id="apaga-tudo">
+                  Apagar tudo
+                </button>
+              </section>
+        
+              <ol id="lista-tarefas">
+        
+              </ol>
+            </main>
+        
+          </section>
+          <!-- Esta section abaixo trata-se do HTML do projeto PixelsArt, que utiliza o scriptPixelArt.js - O CSS de todos os projetos iniciais foram feitos no style.css -->
+          <section  id="article-project">
+            <h1 id="title">
+              Paleta de Cores
+            </h1>
+          </section>
+      </section>
+
+      </section>
+
+      <footer>
+        <p>
+          Criado por <a href="https://www.linkedin.com/in/gregoriobezerra/" target="_blank"><abbr title="Abre o Linkedin em uma nova aba">Gregório Bezerra</abbr></a> &copy; 2022
+        </p>
+      </footer>
+
+    </main>
+    
+    <script src="scriptPixelsArt.js"></script>
     <script src="script.js"></script>
     <script src="scriptTodoList.js"></script>
   </body>
-</html>
+  </html>
